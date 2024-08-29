@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
 struct PersitenceApp: App {
     var body: some Scene {
@@ -15,3 +15,4 @@ struct PersitenceApp: App {
         }
     }
 }
+

@@ -11,8 +11,10 @@ import SwiftData
 struct PersitenceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ToDoList()
+            
+                .modelContainer(for: Task.self)
         }
     }
+    
 }
-

@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            NavigationStack {
+                NavigationLink("Make A To Do List", destination: ToDoList())
+                Text("Or Perhaps")
+                    .font(.title)
+                //NavigationLink("Make A List Of Colleges", destination: <#T##() -> View#>)
+            }
         }
         .padding()
     }

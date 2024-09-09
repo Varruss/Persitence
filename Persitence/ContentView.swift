@@ -13,10 +13,14 @@ struct ContentView: View {
         VStack {
             NavigationStack {
                 NavigationLink("Make A To Do List", destination: ToDoList())
+                    .font(.largeTitle)
                 Text("Or Perhaps")
                     .font(.title)
-                //NavigationLink("Make A List Of Colleges", destination: <#T##() -> View#>)
+                    .padding()
+                NavigationLink("Make A List Of Colleges", destination: CollegeList())
+                    .font(.largeTitle)
             }
+            
         }
         .padding()
     }
